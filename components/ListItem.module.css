@@ -1,0 +1,12 @@
+.title {
+  line-height: 1.25;
+  font-size: 0.75rem;
+  font-weight: 100;
+  color: rgb(107, 107, 107);
+  min-height: 30px;
+}
+
+.link {
+  text-decoration: none;
+  text-align: left;
+}

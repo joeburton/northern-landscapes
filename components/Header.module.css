@@ -1,0 +1,16 @@
+.mainNav {
+  color: black;
+}
+
+.mainNav a {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: rgb(107, 107, 107);
+  text-decoration: none;
+}
+
+.mainNav a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
