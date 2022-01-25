@@ -4,7 +4,7 @@ Next.js with TypeScript.
 
 ## Preview
 
-Preview the example live on [Vercel](http://stackblitz.com/):
+Preview the example live on [Vercel](https://northern-landscapes.vercel.app/):
 
 ## Deploy your own
 
