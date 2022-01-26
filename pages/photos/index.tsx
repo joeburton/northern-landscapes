@@ -10,7 +10,7 @@ type Props = {
 };
 
 const WithStaticProps = ({ items }: Props) => (
-  <Layout title='North Yorkshire and beyond Landscapes - Photography'>
+  <Layout title='North Yorkshire, Craven and beyond Landscapes - Photography'>
     <List items={items} />
   </Layout>
 );
