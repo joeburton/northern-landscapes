@@ -20,7 +20,6 @@ const StaticPropsDetail = ({ photo, errors }: Props) => {
       </Layout>
     );
   }
-  const metaTitle = `North Yorkshire and beyond Landscapes, ${photo.title}`;
   return (
     <Layout title={`North Yorkshire and beyond Landscapes, ${photo.title}`}>
       {photo && <PhotoDetail photo={photo} />}
