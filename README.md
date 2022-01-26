@@ -6,6 +6,10 @@ Next.js with TypeScript.
 
 Preview the example live on [Vercel](https://northern-landscapes.vercel.app/):
 
+## Super easy domain name configuration with vercel and name.com
+
+View site [www.northern-landscapes.com](https://www.northern-landscapes.com)
+
 ## Deploy your own
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/joeburton/northern-landscapes=northern-landscapes&repository-name=northern-landscapes)

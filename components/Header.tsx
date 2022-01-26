@@ -18,10 +18,6 @@ const Header = () => (
       <Link href='/about'>
         <a>About</a>
       </Link>
-      <NavSeperator />
-      <Link href='/api/photos'>
-        <a>Image API</a>
-      </Link>
     </nav>
     <hr />
   </header>
