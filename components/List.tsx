@@ -11,7 +11,7 @@ type ImagesArray = {
 import styles from './List.module.css';
 
 const List = ({ images }: ImagesArray) => {
-  const [imageArray, setImageArray] = useState<Photo[] | []>(images);
+  const [imageArray, setImageArray] = useState<Photo[]>(images);
 
   return (
     <Grid>
