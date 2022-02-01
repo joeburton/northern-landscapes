@@ -6,18 +6,18 @@ import Layout from '../../components/Layout';
 import List from '../../components/List';
 
 type Props = {
-  items: Photo[];
+  images: Photo[];
 };
 
-const WithStaticProps = ({ items }: Props) => (
+const WithStaticProps = ({ images }: Props) => (
   <Layout title='North Yorkshire, Craven and beyond Landscapes - Photography'>
-    <List items={items} />
+    <List images={images} />
   </Layout>
 );
 
 export const getStaticProps: GetStaticProps = async () => {
-  const items: Photo[] = photosData;
-  return { props: { items } };
+  const images: Photo[] = photosData;
+  return { props: { images } };
 };
 
 export default WithStaticProps;

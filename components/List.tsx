@@ -1,34 +1,51 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import ListItem from './ListItem';
 import { Photo } from '../interfaces';
 import Grid from '@mui/material/Grid';
+import FilterImages from './FilterImages';
 
-type Props = {
-  items: Photo[];
+type ImagesArray = {
+  images: Photo[];
 };
 
 import styles from './List.module.css';
 
-const List = ({ items }: Props) => (
-  <Grid container alignItems='stretch' className={styles.photosList}>
-    {items.map((item) => (
-      <Grid
-        item
-        xs={6}
-        sm={4}
-        md={3}
-        key={item.id}
-        sx={{
-          marginBottom: 2,
-          paddingRight: 2,
-          paddingLeft: 1,
-          textAlign: 'left',
-        }}
-      >
-        <ListItem data={item} />
+const List = ({ images }: ImagesArray) => {
+  const [imageArray, setImageArray] = useState<Photo[] | []>(images);
+
+  return (
+    <Grid>
+      <Grid item>
+        <FilterImages setImageArray={setImageArray} images={images} />
       </Grid>
-    ))}
-  </Grid>
-);
+      <Grid item>
+        <Grid
+          container
+          spacing={1}
+          alignItems='stretch'
+          className={styles.photosList}
+        >
+          {imageArray.map((image) => (
+            <Grid
+              item
+              xs={6}
+              sm={4}
+              md={3}
+              key={image.id}
+              sx={{
+                marginBottom: 2,
+                paddingRight: 2,
+                paddingLeft: 1,
+                textAlign: 'left',
+              }}
+            >
+              <ListItem data={image} />
+            </Grid>
+          ))}
+        </Grid>
+      </Grid>
+    </Grid>
+  );
+};
 
 export default List;
