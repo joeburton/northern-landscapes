@@ -14,17 +14,12 @@ const List = ({ images }: ImagesArray) => {
   const [imageArray, setImageArray] = useState<Photo[]>(images);
 
   return (
-    <Grid>
+    <Grid container>
       <Grid item>
         <FilterImages setImageArray={setImageArray} images={images} />
       </Grid>
       <Grid item>
-        <Grid
-          container
-          spacing={1}
-          alignItems='stretch'
-          className={styles.photosList}
-        >
+        <Grid container className={styles.photosList}>
           {imageArray.map((image) => (
             <Grid
               item
