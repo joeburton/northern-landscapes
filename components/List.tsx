@@ -15,10 +15,10 @@ const List = ({ images }: ImagesArray) => {
 
   return (
     <Grid container>
-      <Grid item>
+      <Grid item xs={12}>
         <FilterImages setImageArray={setImageArray} images={images} />
       </Grid>
-      <Grid item>
+      <Grid item xs={12}>
         <Grid container className={styles.photosList}>
           {imageArray.map((image) => (
             <Grid
@@ -28,9 +28,10 @@ const List = ({ images }: ImagesArray) => {
               md={3}
               key={image.id}
               sx={{
-                marginBottom: 2,
-                paddingRight: 2,
+                marginTop: 2,
+                marginBottom: 1,
                 paddingLeft: 1,
+                paddingRight: 1,
                 textAlign: 'left',
               }}
             >
