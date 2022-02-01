@@ -20,7 +20,11 @@ const FilterImages = ({ setImageArray, images }) => {
 
   return (
     <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
-      <FormControl fullWidth sx={{ m: 1 }} variant='standard'>
+      <FormControl
+        fullWidth
+        sx={{ marginTop: 0, marginRight: 1, marginBottom: 2, marginLeft: 1 }}
+        variant='standard'
+      >
         <TextField
           label='Filter Photos'
           variant='standard'
