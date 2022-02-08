@@ -27,6 +27,14 @@ const PhotoDetail = ({ photo: photo }: PhotoDetailProps) => (
       height='1125'
       alt={photo.title}
     />
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        height: '100px',
+      }}
+    ></div>
   </div>
 );
 
